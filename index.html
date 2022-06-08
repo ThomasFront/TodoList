@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <script src="https://kit.fontawesome.com/778dbac517.js" crossorigin="anonymous"></script>
+    <script src="./dist/js/main.min.js" defer></script>
+</head>
+
+<body>
+
+    <div class="todo-list">
+        <div class="todo-list__top">
+            <h1 class="todo-list__h1">Dodaj zadanie</h1>
+            <input type="text" class="todo-list__input" placeholder="Wpisz treść zadania..." id="todo-input">
+            <p class="todo-list__error" id="todo-error">Musisz wpisać treść zadania!</p>
+            <button id="todo-add-btn" class="todo-list__btn"><i class="fa-solid fa-plus"></i> Dodaj zadanie</button>
+        </div>
+
+        <div class="todo-list__bottom">
+            <ul class="todo-list__ul" id="ul-list">
+                <!-- <li class="todo-list__li">
+                    <p class="todo-list__paragraf">Testowy tekst</p>
+                    <div class="todo-list__tools">
+                        <p class="todo-list__tools-p" id="todo-edit-btn">edit</p>
+                        <i class="todo-list__tools-x fa-solid fa-xmark" id="todo-delete-btn"></i>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="edit-popup" id="popup">
+        <label for="edit-popup__input" class="edit-popup__label">Edytuj zadanie</label>
+        <input id="popup-input" type="text" class="edit-popup__input" id="edit-input"
+            placeholder="Wpisz nową treść zadania...">
+        <div class="edit-popup__btns">
+            <button class="edit-popup__add-btn edit-popup__btn-popup" id="popup-edit-save">Zapisz</button>
+            <button class="edit-popup__cancel-btn edit-popup__btn-popup edit-popup__add-btn--cancel"
+                id="popup-edit-cancel">Anuluj</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

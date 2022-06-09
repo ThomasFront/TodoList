@@ -110,6 +110,7 @@ input:focus {
 		border-radius: 4px;
 		border: 1px solid black;
 		box-shadow: 0 0 4px black;
+		word-break: break-all;
 	}
 
 	&__tools {

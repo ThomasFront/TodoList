@@ -203,6 +203,10 @@ input:focus {
 	&__add-btn--cancel {
 		margin-left: 1em;
 	}
+
+	&__error {
+		display: none;
+	}
 }
 
 .show-popup {
